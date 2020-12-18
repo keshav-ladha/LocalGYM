@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            font-family: 'Ubuntu';
+            margin: 0px;
+            padding: 0px;
+            background-image: url("img/mainbg.jpg");
+            color: white;
+        }
+
+        .left {
+            position: absolute;
+            left: 6px;
+            top: 7px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            padding-left: 24px;
+            width: 79px;
+            height: 68px;
+            filter: invert(100%)
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Fredoka One';
+            font-size: 18px;
+            line-height: 19px;
+        }
+
+        .mid {
+            display: block;
+            margin: 20px auto;
+            /* border: 2px solid yellow; */
+            width: 46%;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid green; */
+        }
+
+        .right div {
+            font-size: 25px;
+        }
+
+        .navbar {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            color: white;
+        }
+
+        .navbar li a {
+            width: 5px;
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 13px 1px;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Fredoka One';
+            background: transparent;
+        }
+
+        .btn:hover {
+            background: rgb(65, 63, 63);
+        }
+
+        .copy {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        .container {
+            font-family: 'Fredoka One';
+            text-align: center;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 92px 91px;
+            padding: 0px 17px;
+            width: 39%;
+            border-radius: 20px;
+        }
+
+        .form-group input {
+            text-align: center;
+            color: black;
+            display: block;
+            width: 400px;
+            background-color: rgb(255, 255, 255);
+            padding: 6px 50px;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 7px auto;
+            font-size: 25px;
+        }
+
+        .container button {
+            padding: 5px 7px;
+            font-size: 20px;
+            width: 96%;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://img.icons8.com/ios/150/000000/dumbbell--v2.png" />
+
+            <div>Keshav Fitness</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Benefits</a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Mail Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join The Best GYM In Kolkata</h2>
+        <form action="noaction.py">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="&nbsp;&nbsp;&nbsp;Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Number">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="copy">&copy;2020 Keshav</footer>
+</body>
+
+</html>
